@@ -6,6 +6,16 @@ A Chrome extension that replaces your new tab page with a clean, domain-grouped 
 
 ---
 
+## Screenshots / 截图
+
+### Light Mode / 浅色模式
+![screenshot-light](screenshot-light.jpg)
+
+### Dark Mode / 深色模式
+![screenshot-dark](screenshot-dark.jpg)
+
+---
+
 ## Features / 功能
 
 - **Domain grouping** — Tabs are automatically grouped by domain for a clean overview
