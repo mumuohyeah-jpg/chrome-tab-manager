@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Manager</title>
+  <link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+  <!-- Transition Overlay -->
+  <div class="transition-overlay" id="transitionOverlay"></div>
+
+  <!-- Background Layers -->
+  <div class="bg-grid"></div>
+  <div class="bg-dots"></div>
+  <div class="bg-gradient"></div>
+  <div class="bg-lines"></div>
+  <div class="bg-orb bg-orb-1"></div>
+  <div class="bg-orb bg-orb-2"></div>
+  <div class="bg-orb bg-orb-3"></div>
+  <div class="bg-orb bg-orb-4"></div>
+
+  <div class="container">
+    <label class="theme-switch" id="themeSwitch">
+      <span class="theme-switch-icon sun">☀</span>
+      <span class="theme-switch-track">
+        <span class="theme-switch-thumb"></span>
+      </span>
+      <span class="theme-switch-icon moon">☾</span>
+    </label>
+
+    <div class="greeting">
+      <div class="greeting-text" id="greeting">Good morning</div>
+      <div class="greeting-sub" id="greetingSub">You have 0 tabs open</div>
+    </div>
+
+    <div class="stats-row">
+      <div class="stat-badge">
+        <span class="stat-num" id="tabCount">0</span>
+        <span class="stat-label">tabs</span>
+      </div>
+      <div class="stat-badge">
+        <span class="stat-num" id="activeTime">0</span>
+        <span class="stat-label">active</span>
+      </div>
+    </div>
+
+    <div class="search-box">
+      <span class="search-icon">⌕</span>
+      <input type="text" id="searchInput" placeholder="Search tabs...">
+    </div>
+
+    <div class="domain-grid" id="tabList">
+      <div class="loading">Loading...</div>
+    </div>
+
+    <footer>
+      <button id="refreshBtn">Refresh</button>
+    </footer>
+  </div>
+
+  <script src="newtab.js"></script>
+</body>
+</html>
